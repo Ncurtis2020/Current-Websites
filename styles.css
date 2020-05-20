@@ -1,0 +1,242 @@
+/*the(#) is a div id which does not change on a page the(.) is for the div containers which can change from page to page*/ 
+		html{
+			font-family: Arial, Times,san_serif; 
+			color:#000000;
+		} 
+		body{
+			background: url(images/bg.png); 
+			margin: 0;
+		  	background-position: contain;
+		  	background-repeat: no-repeat;
+
+
+		}
+/*this container is on home,products and contact us page*/
+		#container {
+			width: 800px;
+			margin: 0 auto;
+
+		 } 
+/*this header is for the overall website navigation bar*/
+		#header {
+			width:100%; 
+			height: 60px; 
+			background: none;
+
+		}
+		
+		#logo {
+			float: left; 
+			width: 300px; 
+			height: 40px; 
+			margin: 10px; 
+			background: url(images/theblackcode_logo.png);
+		}
+		
+		#top_info { 
+			float: right;
+			width: 300px; /*play around for logo placement*/
+			height: 40px; 
+			margin: 10px; 
+			border: solid #f0dc82 1px; 
+			background: #ccc; 
+		}
+		
+		#nav_bar {
+			height: 20px; 
+			clear: both;
+		}
+		
+		#nav_bar ul {
+			margin: 0px; 
+			padding: 0px; 
+			list-style-type: none; 
+		}
+		
+		#nav_bar ul li {
+			padding: 10px; 
+			float: left;
+		}
+		
+		#nav_bar ul li a {
+			font-size: 12px; 
+			float: left; 
+			padding: 0px, 0px, 0px, 20px; 
+			display: block;  
+			color: #000000;
+			text-decoration: none;
+		}
+/*end of entire website navigation bar*/
+
+/*the beginning of page banner section of each page*/
+		#content_area {
+			width: 1000px;
+			display: inline-block;
+			margin: 40px;
+
+		}
+		#banner {
+			height: 200px;
+			border: 2px solid #000000; 
+			clear: both; 
+			background: none; 
+			padding: 20px;
+			color: #fff;
+			margin-bottom: 20px;
+		}
+		
+		#left_side {
+			width: 450px; 
+			height: 400px; 
+			color: #000000;
+			float: left; 
+			background: #000000;
+			padding: 20px; 
+			border: solid #000000 2px; 
+			background: none;
+		}
+		
+		#right_side {
+			width: 450px; 
+			height: 400px; 
+			float: right; 
+			background: #ccccdd; 
+			padding: 20px; 
+			border: solid #000000 2px; 
+			background: none;
+			color: #000000;
+		}
+		.home_but {
+			border: 2px solid #fff;
+			background: none;
+			padding: 10px 20px;
+			font-size: 20px;
+			color: #ffffff;
+			position: absolute;
+			display: grid; 
+		}
+		#content_area .home_but {
+			position: relative;
+			margin: auto;
+			margin-top: 30px;
+
+		}
+/* beginning of "about us" page styles and main container*/
+		.main_container {
+			text-align: center;
+			background: #fffffd;
+		}
+		
+		.heading {
+			padding-top: 80px;
+			color: #000000;
+			font-size: 16px;
+			align-content: center;
+			text-transform: uppercase;
+			width: 280px;
+			margin: auto;
+			line-height: 80px;
+		}
+
+		.sub_container {
+			max-width: 1200px
+			margin: auto;
+			padding: 50px 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;	
+		}
+		.team_member {
+			margin: 18px;
+			padding: 20px;
+			max-width: 30%;
+			box-sizing: border-box;
+			cursor: pointer;
+			transition: 0.3s;
+		}
+
+		.team_member: hover {
+			background: #ffffff;
+		}
+
+		.team_member img {
+			width: 100px;
+			height: 100px;
+			border: 1px solid #EEEEEE;
+			border-radius: 50%;
+		}
+/*end of "about us" page styles*/
+
+/*beginning of products page styles*/
+		.heading_2 {
+			color: #444;
+			font-size: 16px;
+			align-content: center;
+			text-transform: uppercase;
+			width: 280px;
+			margin: 50px;
+			line-height: 80px;
+		}
+
+		.container_2 {
+			display: grid;
+			grid-template-columns: repeat(5,1fr);
+			grid-template-rows: repeat(2, 1fr);
+			grid-row-gap: 10px;
+			grid-column-gap: 10px;
+			margin: 50px;
+			justify-content: center;
+		}
+/*every page contains this footer*/
+		#footer { 
+			padding: 20px; 
+			clear: both; 
+			background: none;
+			color: #000000;
+			border-top: 1px solid #000000;
+		}
+		#left_side_column {
+			float:left;
+			width: 400px;
+			padding: 20px;
+			height: 600px;
+			color: FFF;
+		}	
+	
+		.form_container {
+			width: 320px;
+			background: grey;
+			box-sizing: border-box;
+			left: 50%;
+			top: 50px;
+		}
+
+		input{
+			width: 100%;
+			background: none;
+			border: 1px solid black;
+			border-radius: 3px;
+			padding: 6px 15px;
+			box-sizing: border-box;
+			font-size: 16px;
+			color: black;
+		}
+	
+		input[type="button"] {
+			background:grey; 
+			border: 0; 
+			cursor: pointer; 
+			color:#3e3d3d;
+		}
+		input[type="button"] :hoover{
+			background:#ccc; 
+			transition:.6s;
+		}
+		
+		#right_side_column {
+			float: right;
+			width: 300px;
+			padding: 20px;
+			height: 600px;
+			color: #000000
+		}
